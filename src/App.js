@@ -1,23 +1,20 @@
 import logo from './logo.svg';
 import './App.css';
-
+import "./Components/style.scss"
+import {BrowserRouter as Router,HashRouter, Switch,Route} from "react-router-dom";
+import Page from './Components/Page';
+import Mouse from './Components/Mouse';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>
+        <HashRouter>
+        <Switch>
+          <Route path="/" exact component={Page}/>
+          <Route path="/Mouse" component={Mouse}/>
+        </Switch>
+        </HashRouter>
+      </Router>
     </div>
   );
 }
