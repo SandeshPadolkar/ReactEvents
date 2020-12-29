@@ -5,7 +5,7 @@ import "./style.scss"
 const Page = () =>{
     const color="orange";
     const [bg,setBg]=useState(color);
-    const [name,setName]=useState("Hey.. Click Me..! 😉😉😉");
+    const [name,setName]=useState("Hey... Click Me..! 😉😉😉");
     
     const bgColor = () =>{
         // console.log("Clicked");

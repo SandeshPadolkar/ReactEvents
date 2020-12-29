@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import "./Components/style.scss"
 import {BrowserRouter as Router,HashRouter, Switch,Route} from "react-router-dom";
